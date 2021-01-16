@@ -2,6 +2,9 @@
   "name": "sharepoint-pull",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
   "license": "MIT",
   "dependencies": {
     "sppull": "^2.6.7"
