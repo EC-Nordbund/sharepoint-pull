@@ -17,7 +17,7 @@
 
   await sppull({
     siteUrl: SP_BASE_URL,
-    cred: {
+    creds: {
       username: SP_CRED_USER,
       password: SP_CRED_PASS
     }
