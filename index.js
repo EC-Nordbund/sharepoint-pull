@@ -1,17 +1,25 @@
+const { readdirSync, statSync, unlinkSync, readFileSync, writeFileSync } = require('fs');
+const { join } = require('path');
+
 (async () => {
   const { sppull } = require('sppull');
+  writeFileSync('/sharepoint/.lock', '')
 
   const {
     SP_BASE_URL,
-    SP_CRED_USER,
-    SP_CRED_PASS,
+    SP_CRED_CLIENTID,
+    SP_CRED_CLIENTSECRET,
+    SP_CRED_REALM,
     SP_ROOT_FOLDER,
     SP_DELETE
   } = process.env
 
+  console.log(SP_ROOT_FOLDER)
+
   if ([SP_BASE_URL,
-    SP_CRED_USER,
-    SP_CRED_PASS,
+    SP_CRED_CLIENTID,
+    SP_CRED_CLIENTSECRET,
+    SP_CRED_REALM,
     SP_ROOT_FOLDER].some(v => !v)) {
     throw 'You need to provide all required ENV-Vars'
   }
@@ -19,8 +27,9 @@
   const result = await sppull({
     siteUrl: SP_BASE_URL,
     creds: {
-      username: SP_CRED_USER,
-      password: SP_CRED_PASS
+       clientId: SP_CRED_CLIENTID,
+       clientSecret: SP_CRED_CLIENTSECRET,
+       realm: SP_CRED_REALM
     }
   }, {
     spRootFolder: SP_ROOT_FOLDER,
@@ -32,9 +41,19 @@
   const filesWritten = result.map(v=>v.SavedToLocalPath).sort()
   const filesRead = readDirRec('/sharepoint')
 
-  const toDelete = filesRead.filter(v=>!filesWritten.includes(v))
+  const version = result.map(v=>v.TimeLastModified).sort().reverse()[0]
 
-  if(toDelete.length===0) return;
+  const oldVersion = readFileSync('/sharepoint/.version', 'utf8')
+
+  if (version !== oldVersion) {
+    writeFileSync('/sharepoint/.version', version)
+    writeFileSync('/sharepoint/.restart', '')
+  }
+
+  const toDelete = filesRead.filter(v=>!filesWritten.includes(v) && !v.startsWith('/sharepoint/.'))
+
+  if(toDelete.length===0) {unlinkSync('/sharepoint/.lock')
+  return;}
  
   console.log('exists-check | Finished')
   console.log('files to delete')
@@ -45,13 +64,12 @@
     toDelete.map(f => {
       unlinkSync(f)
     })
+    if(toDelete.length > 0) writeFileSync('/sharepoint/.restart', '');
   } else {
     console.log('To Delete these files set env SP_DELETE = "verify"')
   }
+  unlinkSync('/sharepoint/.lock')
 })()
-
-const { readdirSync, statSync, unlinkSync } = require('fs')
-const { join } = require('path')
 
 function readDirRec(dir) {
   let r = []

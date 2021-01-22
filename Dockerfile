@@ -1,10 +1,4 @@
-FROM node:alpine
-
-ENV SP_BASE_URL = ""
-ENV SP_CRED_USER = ""
-ENV SP_CRED_PASS = ""
-ENV SP_ROOT_FOLDER = ""
-ENV SP_DELETE = "NOT-ALLOWED!"
+FROM node:15.6.0-alpine
 
 VOLUME "/sharepoint"
 

@@ -7,6 +7,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "sppull": "^2.6.7"
+    "sppull": "^2.6.7",
+    "chokidar": "latest"
   }
 }
