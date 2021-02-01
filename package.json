@@ -11,7 +11,7 @@
     "sppull": "^2.6.7"
   },
   "devDependencies": {
-    "@types/chalk": "^2.2.0",
-    "@types/node": "^14.14.22"
+    "@types/chalk": "2.2.0",
+    "@types/node": "14.14.22"
   }
 }
