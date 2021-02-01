@@ -19,6 +19,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/chalk@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@types/chalk@npm:2.2.0"
+  dependencies:
+    chalk: "*"
+  checksum: 9cded9031f180268be59010fc1e13c7b4384e51f0ca8b75bc7a40bdd46f5f3c4859953525fb53663287e5bb25ca5df59396c276ce5c09e1a83aa7a2aec6a9f59
+  languageName: node
+  linkType: hard
+
 "@types/cookie@npm:^0.1.29":
   version: 0.1.29
   resolution: "@types/cookie@npm:0.1.29"
@@ -62,6 +71,13 @@ __metadata:
   version: 14.14.21
   resolution: "@types/node@npm:14.14.21"
   checksum: b659823ffa01684ff2cb4edf0b70ea76d7eae6cd86af43de62ae6b460c174161850fb75a1be50ab60c4519c14babd4ec430ddbbe6689e341073ba10ff106311c
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^14.14.22":
+  version: 14.14.22
+  resolution: "@types/node@npm:14.14.22"
+  checksum: e46e32685b4d0261779c13c10ba3ff220cfa714b5c12f8f571fd52cc309546bdbc8ffc86cbad20559ad88e7b17e66fc51c98b067d8c3766597092c05df157b9b
   languageName: node
   linkType: hard
 
@@ -215,7 +231,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.1.0":
+"chalk@npm:*, chalk@npm:^4.1.0":
   version: 4.1.0
   resolution: "chalk@npm:4.1.0"
   dependencies:
@@ -959,6 +975,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sharepoint-pull@workspace:."
   dependencies:
+    "@types/chalk": ^2.2.0
+    "@types/node": ^14.14.22
+    chalk: ^4.1.0
     sppull: ^2.6.7
   languageName: unknown
   linkType: soft

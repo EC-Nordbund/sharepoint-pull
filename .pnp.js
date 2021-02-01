@@ -37,6 +37,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@types/chalk", "npm:2.2.0"],
+            ["@types/node", "npm:14.14.22"],
+            ["chalk", "npm:4.1.0"],
             ["sppull", "npm:2.6.7"]
           ],
           "linkType": "SOFT",
@@ -56,6 +59,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-caseless-npm-0.12.2-fc711e5d73-492343e499.zip/node_modules/@types/caseless/",
           "packageDependencies": [
             ["@types/caseless", "npm:0.12.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/chalk", [
+        ["npm:2.2.0", {
+          "packageLocation": "./.yarn/cache/@types-chalk-npm-2.2.0-aa14c60d4f-9cded9031f.zip/node_modules/@types/chalk/",
+          "packageDependencies": [
+            ["@types/chalk", "npm:2.2.0"],
+            ["chalk", "npm:4.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -112,6 +125,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-14.14.21-dcd7190898-b659823ffa.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:14.14.21"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:14.14.22", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.22-fe4ed4ddc2-e46e32685b.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:14.14.22"]
           ],
           "linkType": "HARD",
         }],
@@ -1212,6 +1232,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["sharepoint-pull", "workspace:."],
+            ["@types/chalk", "npm:2.2.0"],
+            ["@types/node", "npm:14.14.22"],
+            ["chalk", "npm:4.1.0"],
             ["sppull", "npm:2.6.7"]
           ],
           "linkType": "SOFT",
