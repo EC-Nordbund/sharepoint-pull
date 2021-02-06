@@ -978,7 +978,7 @@ __metadata:
     "@types/chalk": 2.2.0
     "@types/node": 14.14.25
     chalk: 4.1.0
-    sppull: 2.6.7
+    sppull: 2.7.0
   languageName: unknown
   linkType: soft
 
@@ -1009,9 +1009,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sppull@npm:2.6.7":
-  version: 2.6.7
-  resolution: "sppull@npm:2.6.7"
+"sppull@npm:2.7.0":
+  version: 2.7.0
+  resolution: "sppull@npm:2.7.0"
   dependencies:
     colors: ^1.4.0
     mkdirp: ^1.0.4
@@ -1019,7 +1019,7 @@ __metadata:
     node-sp-auth-config: ^2.9.4
     request: ^2.88.2
     sp-request: ^2.1.3
-  checksum: d94ca0d5c3ac98b949b1ea500fc9f451151c8a0f960e256a3afc2c20d06fa72b4a87563a114cbb301eb5f132353123dcf218a1f84de340ca582fee7e95091786
+  checksum: 5f2363a9e9f93257907d8f3648c2c7aa779cc93996a10df4809ff24852e54fcbbb2ecc1e7dd1283818bfb859b804da7b25a1152dac853b9dca19dd9de479793d
   languageName: node
   linkType: hard
 

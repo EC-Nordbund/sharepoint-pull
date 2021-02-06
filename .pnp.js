@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chalk", "npm:2.2.0"],
             ["@types/node", "npm:14.14.25"],
             ["chalk", "npm:4.1.0"],
-            ["sppull", "npm:2.6.7"]
+            ["sppull", "npm:2.7.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -1235,7 +1235,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chalk", "npm:2.2.0"],
             ["@types/node", "npm:14.14.25"],
             ["chalk", "npm:4.1.0"],
-            ["sppull", "npm:2.6.7"]
+            ["sppull", "npm:2.7.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -1271,10 +1271,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["sppull", [
-        ["npm:2.6.7", {
-          "packageLocation": "./.yarn/cache/sppull-npm-2.6.7-3a89d7a41f-d94ca0d5c3.zip/node_modules/sppull/",
+        ["npm:2.7.0", {
+          "packageLocation": "./.yarn/cache/sppull-npm-2.7.0-ee7c687c0b-5f2363a9e9.zip/node_modules/sppull/",
           "packageDependencies": [
-            ["sppull", "npm:2.6.7"],
+            ["sppull", "npm:2.7.0"],
             ["colors", "npm:1.4.0"],
             ["mkdirp", "npm:1.0.4"],
             ["node-sp-auth", "npm:2.5.9"],
