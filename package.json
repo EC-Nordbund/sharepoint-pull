@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "4.1.0",
-    "sppull": "2.6.7"
+    "sppull": "2.7.0"
   },
   "devDependencies": {
     "@types/chalk": "2.2.0",
