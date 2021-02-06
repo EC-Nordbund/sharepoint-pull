@@ -38,7 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@types/chalk", "npm:2.2.0"],
-            ["@types/node", "npm:14.14.22"],
+            ["@types/node", "npm:14.14.25"],
             ["chalk", "npm:4.1.0"],
             ["sppull", "npm:2.6.7"]
           ],
@@ -128,10 +128,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:14.14.22", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.22-fe4ed4ddc2-e46e32685b.zip/node_modules/@types/node/",
+        ["npm:14.14.25", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.25-cd44243469-64c42730f4.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.14.22"]
+            ["@types/node", "npm:14.14.25"]
           ],
           "linkType": "HARD",
         }],
@@ -1233,7 +1233,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["sharepoint-pull", "workspace:."],
             ["@types/chalk", "npm:2.2.0"],
-            ["@types/node", "npm:14.14.22"],
+            ["@types/node", "npm:14.14.25"],
             ["chalk", "npm:4.1.0"],
             ["sppull", "npm:2.6.7"]
           ],
