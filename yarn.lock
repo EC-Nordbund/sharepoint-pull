@@ -74,10 +74,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.14.25":
-  version: 14.14.25
-  resolution: "@types/node@npm:14.14.25"
-  checksum: 64c42730f4169e49ec378870622ef06c5d820b31340e224cc1b45bf06c8b0cfa28daa587b4ae2b8ea1f712ef049bae4d9c92925b157ba9ba7cde3b22ff552513
+"@types/node@npm:15.14.9":
+  version: 15.14.9
+  resolution: "@types/node@npm:15.14.9"
+  checksum: 4ffd4b5f5a6880658fa81b248458c2ac8ed91589df65979e1f4b09edc83c1f8dbe293329bd29e738a808097e7aa1cb61d0fb8f4ffd06c3fa6990b37500737aba
   languageName: node
   linkType: hard
 
@@ -976,7 +976,7 @@ __metadata:
   resolution: "sharepoint-pull@workspace:."
   dependencies:
     "@types/chalk": 2.2.0
-    "@types/node": 14.14.25
+    "@types/node": 15.14.9
     chalk: 4.1.0
     sppull: 2.7.0
   languageName: unknown
